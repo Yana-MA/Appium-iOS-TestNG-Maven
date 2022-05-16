@@ -40,11 +40,8 @@ Tools used:
    
 3. `allure serve` to generate allure report
 
+# Report
 
-
-
-
-
-
+<img width="900" alt="Screen Shot 2022-05-16 at 2 50 17 PM" src="https://user-images.githubusercontent.com/19862702/168587211-2660a03e-601c-4d0f-b911-9bc0a17c0e90.png">
 
 
