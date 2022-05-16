@@ -27,17 +27,8 @@ Tools used:
 # How to run the tests
 
 1. `appium` to start the server
-2.  to run tests for with specified parameters you need 
-      - platform version, 
-      - device name, 
-      - udid
-   e.g.
-   `mvn clean test 
-   -DsuiteXmlFile=testng.xml 
-   -Dplatform="15.0" 
-   -DdeviceName="iPhone 13" 
-   -Dudid="53644E91-174F-454C-8EE7-925DBB215C31"`
-   
+2.  `mvn clean test -DsuiteXmlFile=testng.xml -Dplatform="15.0" -DdeviceName="iPhone 13" -Dudid="53644E91-174F-454C-8EE7-925DBB215C31"` 
+(to run tests with parameters you will need: platform version, device name, udid)
 3. `allure serve` to generate allure report
 
 # Report
