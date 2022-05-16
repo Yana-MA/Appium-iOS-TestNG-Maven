@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite" verbose="1">
+    <parameter name="platform" value="15.4"/>
+    <parameter name="deviceName" value="iPhone 13"/>
+    <parameter name="udid" value="F2CD420C-20AD-405F-98FA-E5E278382E62" />
+
+    <listeners>
+        <listener class-name="utils.AllureTestListener"/>
+    </listeners>
+
+    <test name="Test run">
+        <classes>
+            <class name="tests.Tests"/>
+        </classes>
+    </test>
+
+</suite>
