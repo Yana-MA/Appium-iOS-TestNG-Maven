@@ -7,8 +7,7 @@ import lombok.Getter;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-@Getter
-public class SearchPage extends Page {
+public class SearchPage {
 
     private AppiumDriver<IOSElement> driver;
 

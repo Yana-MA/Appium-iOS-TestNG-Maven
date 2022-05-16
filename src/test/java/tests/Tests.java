@@ -13,12 +13,11 @@ import utils.AllureTestListener;
 
 import static org.testng.Assert.assertTrue;
 
-//tests using page object pattern
 @Listeners({ AllureTestListener.class })
 public class Tests extends BaseTest {
 
     @Test
-    public void search2() {
+    public void search() {
         NavigationBar navBar = new NavigationBar(driver);
         SearchPage searchPage = new SearchPage(driver);
 
@@ -29,7 +28,7 @@ public class Tests extends BaseTest {
     }
 
     @Test
-    public void scrollToTheLastCategory2() {
+    public void scrollToTheLastCategory() {
         NavigationBar navBar = new NavigationBar(driver);
         NewsPage newsPage = new NewsPage(driver);
 
@@ -47,7 +46,7 @@ public class Tests extends BaseTest {
     }
 
     @Test
-    public void testThatAlwaysFails2() {
+    public void testThatAlwaysFails() {
         NavigationBar navBar = new NavigationBar(driver);
         SearchPage searchPage = new SearchPage(driver);
 

@@ -9,6 +9,7 @@ import io.appium.java_client.remote.MobilePlatform;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.*;
+
 import java.net.URL;
 import java.time.Duration;
 

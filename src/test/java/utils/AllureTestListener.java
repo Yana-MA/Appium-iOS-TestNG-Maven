@@ -6,12 +6,8 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.IInvokedMethod;
 import org.testng.IInvokedMethodListener;
-import org.testng.ITestListener;
 import org.testng.ITestResult;
 import tests.BaseTest;
-
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 
 public class AllureTestListener extends BaseTest implements IInvokedMethodListener {
 

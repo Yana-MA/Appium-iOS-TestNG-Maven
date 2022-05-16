@@ -8,7 +8,7 @@ import lombok.Getter;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class NewTitlesPage extends Page {
+public class NewTitlesPage {
 
     private AppiumDriver<IOSElement> driver;
 
@@ -18,8 +18,6 @@ public class NewTitlesPage extends Page {
     }
 
     @Getter
-//    @FindBy(name = "New Titles")
-    @iOSXCUITFindBy(iOSNsPredicate = "label == \"New Titles\"")
+    @FindBy(xpath = "//*[contains(@label, 'New Titles')]")
     private IOSElement newTitles;
-
 }

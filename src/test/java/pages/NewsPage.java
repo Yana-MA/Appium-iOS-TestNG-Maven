@@ -1,7 +1,6 @@
 package pages;
 
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.IOSElement;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.pagefactory.iOSXCUITFindBy;
@@ -11,8 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.HashMap;
 
-@Getter
-public class NewsPage extends Page {
+public class NewsPage {
 
     private AppiumDriver<IOSElement> driver;
 
@@ -20,11 +18,6 @@ public class NewsPage extends Page {
         this.driver = driver;
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
-
-//    @Getter
-//    @FindBy(name = "New Titles")
-//    private IOSElement newTitles;
-//    //    @FindBy(pre = "label == `New Titles`")
 
     @Getter
     @FindBy(xpath = "//*[contains(@label, 'New Titles')]")
@@ -46,10 +39,6 @@ public class NewsPage extends Page {
         newTitles.click();
         return new NewTitlesPage(driver);
     }
-
-//    public void clickEntertainment() {
-//        entertainment.click();
-//    }
 
     public void scrollTillElement(String predicate) {
         HashMap<String, String> scrollObjects = new HashMap<>();
